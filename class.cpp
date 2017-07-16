@@ -2,23 +2,25 @@
 #include <string>
 #include <sstream>
 using namespace std;
-	class anubhab{
+	class test_drive{ 
+    // private variables 
 	    int age;
-	    std::string name;
+      string name;
+      //public functions 
 	public:
 	int know_data();
 	int init();
 };
-int anubhab::init(){
-    std::cin >>age;
-    std::getline(std::cin,name);
+int test_drive::init(){ //input data from the console
+    cin >>age;
+    getline(cin,name);
 }
-int anubhab::know_data(){
-    std::cout << name << std::endl;
-    std::cout << age << std::endl;
+int test_drive::know_data(){ //output data to the console 
+    cout << name <<endl;
+    cout << age <<endl;
 }
 int main() {
-    anubhab crap;
-    crap.init();
-    crap.know_data();
+    test_drive obj; //class object 
+    obj.init(); //initializing member function init 
+    obj.know_data(); //initializing member function know_data
 }
